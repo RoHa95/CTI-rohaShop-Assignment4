@@ -1,16 +1,42 @@
-# React + Vite
+# 🍔 Rohashop - Assignment4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
+Rohashop is a modern food ordering web application built with React.
+Users can browse meals, view details of each item, and place their orders through a clean and responsive interface.
 
-Currently, two official plugins are available:
+## ✨ Features
+- Browse available food items
+- View detailed page for each meal
+- Dynamic routing using URL parameters
+- Smooth navigation between pages
+- Responsive design (mobile-friendly)
+- Clean UI built with Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 🛠 Tech Stack
+- React
+- React Router DOM
+- useParams
+- useNavigate
+- Routes
+- Link
+- Tailwind CSS
+- JavaScript (ES6+)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## ▶️ How to Run the Project
+- Navigate to the Folder 
+   cd countries-explorer
+- Install dependencies
+   npm install (i)
+- Run the Project
+   npm run dev 
+   and open the localhost on your browser
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## ScreenShots
+![HomePage](./Screenshot1.png)
+
+![Products](./Screenshot2.png)
+
+![ProductsDetails](./Screenshot3.png)
