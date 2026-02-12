@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { data } from "../data";
 import NotFound from "./NotFound";
 function ProductDetails() {
@@ -9,8 +9,7 @@ function ProductDetails() {
   if (!product) {
     return <NotFound />;
   }
-  const { name, price, category, image, introduction, details, recipe } =
-    product;
+  const { name, image, introduction, recipe } = product;
   console.log(product);
   const clickHandler = () => {
     navigate("/products");

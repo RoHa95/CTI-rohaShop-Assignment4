@@ -8,7 +8,6 @@ import ProductsLayout from "./layouts/ProductsLayout";
 import { useState } from "react";
 
 function App() {
-  const [filter, setFilter] = useState("all");
 
   return (
     <Routes>

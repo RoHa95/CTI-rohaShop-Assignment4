@@ -5,11 +5,9 @@ import { useParams } from "react-router-dom";
 
 function Products() {
   const category = useParams();
-  console.log(category.filter);
 
   let products = [];
   if (!category.filter) {
-    console.log("fff");
     products = data;
   } else if (category.filter === "all") {
     products = data;
