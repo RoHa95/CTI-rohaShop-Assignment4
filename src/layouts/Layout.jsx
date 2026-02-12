@@ -7,7 +7,7 @@ function Layout() {
   return (
     <div className="">
       <Navbar />
-      <div className="min-h-[calc(100vh-80px)] max-w-5xl mx-auto">
+      <div className="min-h-[calc(100vh-80px)] max-w-5xl mx-auto sm:my-auto">
         <Outlet />
       </div>
       <Footer/>

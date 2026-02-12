@@ -1,17 +1,21 @@
 import React from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { data } from "../data";
+import NotFound from "./NotFound";
 function ProductDetails() {
   const id = useParams();
   const navigate = useNavigate();
-
   const product = data.find((item) => item.id == id.id);
+  if (!product) {
+    return <NotFound />;
+  }
   const { name, price, category, image, introduction, details, recipe } =
     product;
   console.log(product);
   const clickHandler = () => {
     navigate("/products");
   };
+
   return (
     <div className="flex flex-col sm:flex sm:flex-row mb-6">
       <img
