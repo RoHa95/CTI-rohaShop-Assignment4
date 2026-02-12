@@ -5,8 +5,11 @@ import Layout from "./layouts/Layout";
 import Products from "./pages/Products";
 import NotFound from "./pages/NotFound";
 import ProductsLayout from "./layouts/ProductsLayout";
+import { useState } from "react";
 
 function App() {
+  const [filter, setFilter] = useState("all");
+
   return (
     <Routes>
       <Route element={<Layout />}>
@@ -14,6 +17,10 @@ function App() {
         <Route element={<ProductsLayout />}>
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
+          <Route
+            path="/products/category/:filter"
+            element={<Products />}
+          />
         </Route>
 
         <Route path="/*" element={<NotFound />} />
